@@ -1,8 +1,10 @@
+import '../styles/globals.css'
+
 import { useEffect } from 'react';
 import Router from 'next/router';
 import { initGA, logPageView } from 'analytics';
-// Load DM Sans typeface
-import 'typeface-dm-sans';
+// Load Inter typeface
+import 'fontsource-poppins';
 
 // Load other package css file
 import 'react-multi-carousel/lib/styles.css';

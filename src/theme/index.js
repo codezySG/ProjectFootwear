@@ -9,21 +9,22 @@ export default {
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
     primary: '#1F3E76', // primary button and link color
-    secondary: '#25CB9E', // secondary color - can be used for hover states
+    secondary: '#ff8400', // secondary color - can be used for hover states
     muted: '#7B8188', // muted color
     accent: '#609', // a contrast color for emphasizing UI
     yellow: '#F6C416',
+    orange: '#ff8400',
 
     // highlight	a background color for highlighting text
-    modes: {
-      dark: {
-        text: '#fff',
-        background: '#000',
-        primary: '#0cf',
-        secondary: '#09c',
-        muted: '#111',
-      },
-    },
+    // modes: {
+    //   dark: {
+    //     text: '#fff',
+    //     background: '#000',
+    //     primary: '#0cf',
+    //     secondary: '#09c',
+    //     muted: '#111',
+    //   },
+    // },
   },
   breakpoints: [
     '480px',
@@ -35,8 +36,9 @@ export default {
     '1620px',
   ],
   fonts: {
-    body: "'DM Sans', sans-serif",
-    heading: "'DM Sans', sans-serif",
+      heading: 'Poppins',
+      monospace: 'Poppins',
+      body: 'Poppins'
   },
   fontSizes: [12, 15, 16, 18, 20, 22, 24, 28, 32, 36, 42, 48, 52, 64],
   fontWeights: {
@@ -158,10 +160,17 @@ export default {
       lineHeight: 1.2,
       fontWeight: 700,
       mb: [5, null, null, null, '30px'],
+      mt: '0px'
+    },
+    logoText: {
+      color: 'white',
+      fontSize: [2, 3, 4, '17px', null, 3, '19px', 4],
+      lineHeight: [2, null, null, null, 2.2],
+      fontWeight: '700',
     },
     heroSecondary: {
       color: 'white',
-      fontSize: [2, 3, 4, '17px', null, 3, '19px', 4],
+      fontSize: [2, 3, 4, '20px', null, 3, '19px', 4],
       lineHeight: [2, null, null, null, 2.2],
       fontWeight: 'body',
       pr: [0, null, null, null, null, '100px', null, '125px'],
@@ -248,6 +257,14 @@ export default {
       bg: 'primary',
       '&:hover': {
         boxShadow: 'rgba(31, 62, 118, 0.57) 0px 9px 20px -5px',
+      },
+    },
+    orangeButton: {
+      variant: 'buttons.defaultBtn',
+      color: 'white',
+      bg: '#e37b0a',
+      '&:hover': {
+        boxShadow: 'rgba(0, 0, 0, 0.5) 0px 12px 24px -10px',
       },
     },
     whiteButton: {
