@@ -32,9 +32,9 @@ export default function Header({ className }) {
           </Flex>
 
           <Button
+            className="donate__btn"
             variant="secondary"
             aria-label="For Factories"
-            sx={{'display': ['none', 'none', 'none', 'none', 'block']}}
           >
             For Factories
           </Button>

@@ -3,34 +3,34 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Vector from 'assets/key-feature/vector.svg';
-import Editing from 'assets/key-feature/editing.svg';
-import Speed from 'assets/key-feature/speed.svg';
+import Pencil from 'assets/key-feature/pencil.svg';
+import Blueprint from 'assets/key-feature/blueprint.svg';
+import AssemblyLine from 'assets/key-feature/assembly.svg';
 
 const data = [
   {
     id: 1,
-    imgSrc: Vector,
-    altText: 'Vector',
-    title: 'Vector Editing',
+    svg: Pencil,
+    altText: 'Design and Development',
+    title: 'Design and Development',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We guide you through the design and development process step-by-step to ensure your ultimate satisfication with your shoe.',
   },
   {
     id: 2,
-    imgSrc: Editing,
-    altText: 'Monitoring',
-    title: 'Customize & Monitoring',
+    svg: Blueprint,
+    altText: 'Pre Production',
+    title: 'Pre Production',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We handle the technical process of pre production when it comes to your vision.',
   },
   {
     id: 3,
-    imgSrc: Speed,
-    altText: 'Quality',
-    title: 'Quality & Short-period',
+    svg: AssemblyLine,
+    altText: 'Production',
+    title: 'Production',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We work on the manufactoring process with production lines to make your shoe a reality.',
   },
 ];
 
@@ -39,15 +39,15 @@ export default function KeyFeature() {
     <section sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
-          slogan="Quality features"
-          title="Meet exciting feature of app"
+          slogan="Process Breakdown"
+          title="Our Process"
         />
 
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCardColumn
               key={item.id}
-              src={item.imgSrc}
+              svg={item.svg}
               alt={item.title}
               title={item.title}
               text={item.text}
