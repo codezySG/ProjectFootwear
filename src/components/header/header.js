@@ -2,7 +2,7 @@
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
-import Logo from 'components/logo';
+import { LogoText } from 'components/logo';
 import LogoDark from 'assets/logo-dark.svg';
 import LogoWhite from 'assets/logo.svg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
@@ -14,8 +14,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={className === 'sticky' ? LogoDark : LogoWhite} />
-
+          <LogoText name="Project Footwear" />
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
@@ -33,11 +32,11 @@ export default function Header({ className }) {
           </Flex>
 
           <Button
-            className="donate__btn"
             variant="secondary"
-            aria-label="Get Started"
+            aria-label="For Factories"
+            sx={{'display': ['none', 'none', 'none', 'none', 'block']}}
           >
-            Get Started
+            For Factories
           </Button>
 
           <MobileDrawer />
@@ -108,8 +107,8 @@ const styles = {
       display: 'block',
     },
     a: {
-      fontSize: '16px',
-      fontWeight: '400',
+      fontSize: '18px',
+      fontWeight: '600',
       px: 25,
       cursor: 'pointer',
       lineHeight: '1.2',
