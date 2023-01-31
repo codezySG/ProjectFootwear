@@ -3,14 +3,16 @@ import { jsx, Image, Box, Heading, Text } from 'theme-ui';
 
 export default function FeatureCardColumn({
   src,
+  svg: SVG,
   altText = 'default alt text',
   title,
   text,
 }) {
   return (
     <Box sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.img} />
-
+      {
+        SVG ? <SVG /> : <Image src={src} alt={altText} sx={styles.img} />
+      }
       <Box sx={styles.wrapper}>
         <Heading sx={styles.wrapper.title}>{title}</Heading>
         <Text sx={styles.wrapper.subTitle}>{text}</Text>
@@ -22,7 +24,7 @@ export default function FeatureCardColumn({
 const styles = {
   card: {
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     textAlign: 'center',
     flexDirection: 'column',
   },
@@ -41,6 +43,7 @@ const styles = {
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, null, null, null, 3],
+      mt: [2, null, null, null, null, 3],
     },
 
     subTitle: {
