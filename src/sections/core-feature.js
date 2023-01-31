@@ -3,39 +3,51 @@ import { jsx, Container, Box, Grid, Text, Heading } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
-import CoreFeatureThumb from 'assets/coreFeature.png';
-import Briefcase from 'assets/core-feature/briefcase.svg';
-import Secure from 'assets/core-feature/secure.svg';
+// import CoreFeatureThumb from 'assets/coreFeature.png';
+import RawMaterials from 'assets/core-feature/rawmaterials.svg';
+import Degrees from 'assets/core-feature/360.svg';
+import World from 'assets/core-feature/world.svg';
+
+// COnfigs
+import Images from '../configs/images';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: 'Core services',
+  title: 'Raw Materials, manufacturing sourcing and cutting-edge technology. We have it all.',
   features: [
     {
       id: 1,
-      imgSrc: Briefcase,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      svg: RawMaterials,
+      altText: 'Raw Materials',
+      title: 'Raw Material Sourcing',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Access to a flow of existing and updated materials, including newly emerging sustainable materials and components.',
     },
     {
       id: 2,
-      imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      svg: Degrees,
+      altText: 'Physical and virtual prototype samples',
+      title: 'Physical and virtual prototype samples',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Using your newly developed tech-pack, create a virtual 3D 360º sample rendering or an actual physical prototype at one of our manufacturing sample shops.',
+    },
+    {
+      id: 3,
+      svg: World,
+      altText: 'Worldwide Manufacturing Sourcing',
+      title: 'Worldwide Manufacturing Sourcing',
+      text:
+        'Manufacturing in Brazil, India, and China. We also maintain extended capacities in Italy, Mexico and Portugal.',
     },
   ],
 };
 
 export default function CoreFeature() {
   return (
-    <section sx={styles.coreFeature}>
+    <section sx={styles.coreFeature} id="services">
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={CoreFeatureThumb} alt="Thumbnail" />
+          <Image src={Images.coreFeatureThumb} alt="Thumbnail" />
         </Box>
         <Box sx={styles.contentBox}>
           <Box sx={styles.headingTop}>
@@ -45,7 +57,7 @@ export default function CoreFeature() {
           <Grid gap="15px 0" columns={1} sx={styles.grid}>
             {data.features.map((item) => (
               <Box sx={styles.card} key={item.id}>
-                <Image src={item.imgSrc} alt={item.altText} sx={styles.img} />
+                <item.svg />
 
                 <Box sx={styles.wrapper}>
                   <Heading sx={styles.wrapper.title}>{item.title}</Heading>
@@ -144,18 +156,22 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     mt: '-5px',
+    marginLeft: '10px',
+    width: '80%',
     title: {
       fontSize: 3,
       color: 'heading_secondary',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, null, null, 3],
+      cursor: 'default'
     },
 
     subTitle: {
       fontSize: 1,
       fontWeight: 400,
       lineHeight: [1.85, null, 2],
+      cursor: 'default'
     },
   },
 };

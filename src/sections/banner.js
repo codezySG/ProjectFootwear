@@ -29,7 +29,7 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image sx={{'width': '350px'}} src={Images.bannerThumb} alt="banner" />
+          <Image sx={{'width': ['420px']}} src={Images.bannerThumb} alt="banner" />
         </Box>
       </Container>
     </section>
@@ -61,7 +61,6 @@ const styles = {
     imageBox: {
       display: ['none', null, null, null, 'block'],
       ml: [0, null, null, '-110px', '-115px', '-150px', '-210px', '-270px'],
-      mt: [0, null, null, '40px', 4, 7, 0],
       mb: [0, null, null, null, '-45px', '-70px', null, '-115px'],
       justifyContent: 'center',
       overflow: 'hidden',

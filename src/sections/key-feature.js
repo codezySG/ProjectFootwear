@@ -14,7 +14,7 @@ const data = [
     altText: 'Design and Development',
     title: 'Design and Development',
     text:
-      'We guide you through the design and development process step-by-step to ensure your ultimate satisfication with your shoe.',
+      'With industry leading software, we guide you through the design and development process step-by-step to ensure your ultimate satisfication with your shoe.',
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const data = [
 
 export default function KeyFeature() {
   return (
-    <section sx={{ variant: 'section.keyFeature' }} id="feature">
+    <section sx={{ variant: 'section.keyFeature' }} id="process">
       <Container>
         <SectionHeader
           slogan="Process Breakdown"
