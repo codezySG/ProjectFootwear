@@ -160,7 +160,8 @@ export default {
       lineHeight: 1.2,
       fontWeight: 700,
       mb: [5, null, null, null, '30px'],
-      mt: '0px'
+      mt: '0px',
+      textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
     },
     logoText: {
       color: '#ff8400',
@@ -175,6 +176,7 @@ export default {
       fontWeight: 'body',
       pr: [0, null, null, null, null, '100px', null, '125px'],
       mb: ['35px', null, null, null, '40px', null, null, 7],
+      textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
     },
     title: {
       // extends the text.heading styles
