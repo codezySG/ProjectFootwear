@@ -41,7 +41,7 @@ export class LogoText extends React.PureComponent {
               {...rest}
             >
                 <Heading as="h2" variant="logoText">
-                    <span id="logo" sx={{'fontSize': '22px'}}>{ name }</span>
+                    <span id="logo" sx={{'fontSize': ['18px', null, null, '22px']}}>{ name }</span>
                 </Heading>
             </Link>
         );
