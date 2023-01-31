@@ -163,7 +163,7 @@ export default {
       mt: '0px'
     },
     logoText: {
-      color: 'white',
+      color: '#ff8400',
       fontSize: [2, 3, 4, '17px', null, 3, '19px', 4],
       lineHeight: [2, null, null, null, 2.2],
       fontWeight: '700',
@@ -277,6 +277,7 @@ export default {
     },
     secondary: {
       variant: 'buttons.defaultBtn',
+      padding: ['8px 17px 7px', null, null, null, '10px 27px'],
       border: '1.5px solid white',
       backgroundColor: 'transparent',
       color: 'white',

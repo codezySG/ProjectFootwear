@@ -32,11 +32,11 @@ export default function Header({ className }) {
           </Flex>
 
           <Button
-            className="donate__btn"
             variant="secondary"
-            aria-label="Contact Us"
+            aria-label="For Factories"
+            sx={{'display': ['none', 'none', 'none', 'none', 'block']}}
           >
-            Contact Us
+            For Factories
           </Button>
 
           <MobileDrawer />

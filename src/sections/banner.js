@@ -19,20 +19,13 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             Get connected to best in class manufacturing agents for your ultimate shoe design. You have the plans, we have the execution.
           </Text>
-          <Box sx={{'display': 'flex', 'flexDirection': 'column'}}>
-            <Heading as="h3" sx={{
-              color: 'white',
-              fontSize: [2, 3, 4, '20px', null, 3, '19px', 4],
-              lineHeight: [2, null, null, null, 2.2],
-              fontWeight: 'body',
-              mb: '15px'
-            }}>
-              Are you a factory looking for a way to go to market?
-            </Heading>
-            <Button variant="orangeButton" alt="Select for Factory" aria-label="Factory" sx={{'width': '200px'}}>
-              Select for Factory
-            </Button>
-          </Box>
+          <Button
+            variant="orangeButton"
+            aria-label="Contact Us"
+            sx={{'display': ['none', 'none', 'none', 'none', 'block'], 'mb': '80px'}}
+          >
+            Contact Us
+          </Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
@@ -66,7 +59,7 @@ const styles = {
       pt: [0, null, null, null, null, null, 5, 7],
     },
     imageBox: {
-      display: ['none', null, null, 'block'],
+      display: ['none', null, null, null, 'block'],
       ml: [0, null, null, '-110px', '-115px', '-150px', '-210px', '-270px'],
       mt: [0, null, null, '40px', 4, 7, 0],
       mb: [0, null, null, null, '-45px', '-70px', null, '-115px'],

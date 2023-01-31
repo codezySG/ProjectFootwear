@@ -40,8 +40,8 @@ export class LogoText extends React.PureComponent {
               }}
               {...rest}
             >
-                <Heading as="h2" variant="logo">
-                    <span id="logo" sx={{color: 'white', 'fontSize': '18px'}}>{ name }</span>
+                <Heading as="h2" variant="logoText">
+                    <span id="logo" sx={{'fontSize': '22px'}}>{ name }</span>
                 </Heading>
             </Link>
         );
