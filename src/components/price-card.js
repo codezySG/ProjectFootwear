@@ -65,10 +65,6 @@ export default function PriceCard({
 const styles = {
   pricingBox: {
     boxShadow: [
-      '0px 0px 0px rgba(0, 0, 0, 0)',
-      null,
-      null,
-      null,
       '0px 8px 24px rgba(69, 88, 157, 0.3)',
     ],
     flex: [
