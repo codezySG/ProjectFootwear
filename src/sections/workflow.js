@@ -12,27 +12,27 @@ import Images from '../configs/images';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Collaborative Design',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Using cutting edge technology, we work to refine the design of your shoe.',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Raw Materials Selection',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We determine sourcing for the raw materials to construct your perfect shoe.',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Partner Development',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We seek out the right partner for you, selecting from our extensive manufacturing connections.',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Manufacturing',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'With your selected manufacturing partner, we build out your shoe.',
   },
 ];
 
@@ -41,8 +41,8 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader
-          slogan="Whats the function"
-          title="Let’s see how it works"
+          slogan="Breakdown of our process from concept to reality"
+          title="Steps"
           isWhite={true}
         />
 

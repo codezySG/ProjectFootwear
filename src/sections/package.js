@@ -77,12 +77,11 @@ const packages = [
 ];
 export default function Package() {
   return (
-    <section id="pricing" sx={styles.pricing}>
+    <section id="pricing" sx={styles.pricingPlain}>
       <Container>
         <SectionHeader
-          title="Let’s see how it works"
-          slogan="Whats the function"
-          isWhite={true}
+          title="How we price"
+          slogan="Pricing Breakdown"
         />
         <Flex
           sx={{
@@ -100,6 +99,22 @@ export default function Package() {
 }
 
 const styles = {
+  pricingPlain: {
+    backgroundColor: 'white',
+    py: [8, null, 9, null, null, 10],
+    position: 'relative',
+    '&::before': {
+      position: 'absolute',
+      content: '""',
+      top: 0,
+      right: 0,
+      width: '100%',
+      backgroundSize: '350px 350px',
+      height: '100%',
+      opacity: 0.3,
+      zIndex: 0,
+    },
+  },
   pricing: {
     backgroundColor: 'primary',
     backgroundImage: `url(${PatternBG})`,
