@@ -7,34 +7,34 @@ import PatternBG from 'assets/patternBG.png';
 
 const packages = [
   {
-    name: 'Free Plan',
+    name: 'Basic',
     description: 'For Small teams or office',
-    buttonText: 'Signup Now',
+    buttonText: 'Contact Us',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: 'TBD available',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
         text:
-          'Free access for all kind of exercise corrections with downloads.',
+          'TBD available',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: 'TBD available',
         isAvailable: true,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
+        text: 'TBD unavailable',
         isAvailable: false,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Download and print courses and exercises in PDF',
+        text: 'TBD unavailable',
         isAvailable: false,
       },
     ],
@@ -43,33 +43,31 @@ const packages = [
     header: 'Recommended',
     name: 'Premium',
     description: 'For startup enterprise',
-    priceWithUnit: '$29.99/',
-    buttonText: 'Signup Now',
+    buttonText: 'Contact Us',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: 'TBD available',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text:
-          'Free access for all kind of exercise corrections with downloads.',
+        text: 'TBD available',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: 'TBD available',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
+        text: 'TBD available',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Download and print courses and exercises in PDF',
+        text: 'TBD available',
         isAvailable: true,
       },
     ],
