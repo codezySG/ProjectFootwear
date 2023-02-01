@@ -35,7 +35,9 @@ export default function IndexPage() {
             <SecurePayment />
           </div>
           <Package />
-          <Faq />
+          <div sx={{'display': 'none'}}>
+            <Faq />
+          </div>
         </Layout>
       </StickyProvider>
     </ThemeProvider>
