@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import { StickyProvider } from 'contexts/app/app.provider';
@@ -24,11 +25,15 @@ export default function IndexPage() {
           <Banner />
           <KeyFeature />
           <CoreFeature />
-          <Feature />
-          <PartnerSection />
+          <div sx={{'display': 'none'}}>
+            <Feature />
+            <PartnerSection />
+          </div>
           <WorkFlow />
-          <TestimonialCard />
-          <SecurePayment />
+          <div sx={{'display': 'none'}}>
+            <TestimonialCard />
+            <SecurePayment />
+          </div>
           <Package />
           <Faq />
         </Layout>
