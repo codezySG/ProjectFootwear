@@ -21,30 +21,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Project Footwear" />
-          <Banner />
-          <KeyFeature />
-          <CoreFeature />
-          {
-            false ? (
-              <>
-                <Feature />
-                <PartnerSection />
-              </>
-            ) : null
-          }
-          <WorkFlow />
-          {
-            false ? (
-              <>
-                <TestimonialCard />
-                <SecurePayment />
-              </>
-            ) : null
-          }
-          <Package />
-          { false ? <Faq /> : null }
-        </Layout>
+          test
       </StickyProvider>
     </ThemeProvider>
   );
