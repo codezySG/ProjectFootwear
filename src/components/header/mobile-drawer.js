@@ -4,31 +4,17 @@ import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
+import { Link as AnchorLink } from 'components/link';
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithubAlt,
-  FaDribbble,
+  FaLinkedin
 } from 'react-icons/fa';
 import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
-    icon: <FaFacebookF />,
-  },
-  {
-    path: '/',
-    icon: <FaTwitter />,
-  },
-  {
-    path: '/',
-    icon: <FaGithubAlt />,
-  },
-  {
-    path: '/',
-    icon: <FaDribbble />,
-  },
+    path: 'https://www.linkedin.com/in/christopher-ryan-67b4388',
+    icon: <FaLinkedin />,
+  }
 ];
 
 const MobileDrawer = () => {
@@ -77,7 +63,7 @@ const MobileDrawer = () => {
           <Box sx={styles.social}>
             {social.map(({ path, icon }, i) => (
               <Box as="span" key={i} sx={styles.social.icon}>
-                <Link to={path}>{icon}</Link>
+                <AnchorLink path={path}>{icon}</AnchorLink>
               </Box>
             ))}
           </Box>
@@ -167,7 +153,7 @@ const styles = {
       alignItems: 'center',
       justifyContent: 'center',
       color: 'text',
-      fontSize: 14,
+      fontSize: 18,
       mr: '15px',
       transition: 'all 0.25s',
       cursor: 'pointer',
