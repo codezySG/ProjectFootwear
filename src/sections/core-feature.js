@@ -3,10 +3,6 @@ import { jsx, Container, Box, Grid, Text, Heading } from 'theme-ui';
 import TextFeature from '../components/text-feature';
 import Image from '../components/image';
 
-import RawMaterials from '../assets/core-feature/rawmaterials.svg';
-import Degrees from '../assets/core-feature/360.svg';
-import World from '../assets/core-feature/world.svg';
-
 // COnfigs
 import Images from '../configs/images';
 
@@ -16,7 +12,7 @@ const data = {
   features: [
     {
       id: 1,
-      svg: RawMaterials,
+      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324123/ProjectFootwear/rawMaterials_eq7yq7.svg',
       altText: 'Raw Materials',
       title: 'Raw Material Sourcing',
       text:
@@ -24,7 +20,7 @@ const data = {
     },
     {
       id: 2,
-      svg: Degrees,
+      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324082/ProjectFootwear/360_d3upzl.svg',
       altText: 'Physical and virtual prototype samples',
       title: 'Physical and virtual prototype samples',
       text:
@@ -32,7 +28,7 @@ const data = {
     },
     {
       id: 3,
-      svg: World,
+      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675323993/ProjectFootwear/world_mkelq0.svg',
       altText: 'Worldwide Manufacturing Sourcing',
       title: 'Worldwide Manufacturing Sourcing',
       text:
@@ -56,8 +52,7 @@ export default function CoreFeature() {
           <Grid gap="15px 0" columns={1} sx={styles.grid}>
             {data.features.map((item) => (
               <Box sx={styles.card} key={item.id}>
-                <item.svg />
-
+                <Image src={item.imgSrc} alt={item.alt} />
                 <Box sx={styles.wrapper}>
                   <Heading sx={styles.wrapper.title}>{item.title}</Heading>
                   <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
