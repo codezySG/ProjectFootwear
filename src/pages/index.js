@@ -21,7 +21,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          test
+          testing
         </Layout>
       </StickyProvider>
     </ThemeProvider>
