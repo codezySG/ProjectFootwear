@@ -1,13 +1,13 @@
 /** @jsxImportSource theme-ui */
 import { jsx, Container, Grid  } from 'theme-ui';
-import SectionHeader from 'components/section-header';
-import FeatureCard from 'components/feature-card.js';
-import Smart from 'assets/feature/smart.svg';
-import Winner from 'assets/feature/winner.svg';
-import Cloud from 'assets/feature/cloud.svg';
-import Setting from 'assets/feature/setting.svg';
-import Design from 'assets/feature/design.svg';
-import Chat from 'assets/feature/chat.svg';
+import SectionHeader from '../components/section-header';
+import FeatureCard from '../components/feature-card';
+import Smart from '../assets/feature/smart.svg';
+import Winner from '../assets/feature/winner.svg';
+import Cloud from '../assets/feature/cloud.svg';
+import Setting from '../assets/feature/setting.svg';
+import Design from '../assets/feature/design.svg';
+import Chat from '../assets/feature/chat.svg';
 
 const data = [
   {
