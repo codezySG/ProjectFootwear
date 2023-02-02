@@ -1,10 +1,10 @@
 /** @jsxImportSource theme-ui */
 import { jsx, Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
-import FeatureCardColumn from 'components/feature-card-column.js';
-import Pencil from 'assets/key-feature/pencil.svg';
-import Blueprint from 'assets/key-feature/blueprint.svg';
-import AssemblyLine from 'assets/key-feature/assembly.svg';
+import FeatureCardColumn from '../components/feature-card-column';
+import Pencil from '../assets/key-feature/pencil.svg';
+import Blueprint from '../assets/key-feature/blueprint.svg';
+import AssemblyLine from '../assets/key-feature/assembly.svg';
 
 const data = [
   {
