@@ -21,7 +21,8 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          testing
+          <SEO title="Project Footwear" />
+          <Banner />
         </Layout>
       </StickyProvider>
     </ThemeProvider>
