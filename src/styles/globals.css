@@ -8,11 +8,6 @@ body,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-@font-face {
-	font-family: 'PWScratchedfont';
-	src: url('../../public/assets/PWScratched/PWScratchedfont.ttf');
-}
-
 #mainHeading, #logo {
 	font-family: PWScratchedfont;
 	font-weight: 300;
