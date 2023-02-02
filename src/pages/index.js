@@ -22,6 +22,7 @@ export default function IndexPage() {
       <StickyProvider>
         <Layout>
           test
+        </Layout>
       </StickyProvider>
     </ThemeProvider>
   );
