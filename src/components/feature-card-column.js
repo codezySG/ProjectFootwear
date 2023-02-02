@@ -2,7 +2,7 @@
 import { jsx, Image, Box, Heading, Text } from 'theme-ui';
 
 export default function FeatureCardColumn({
-  src,
+  imgSrc: src,
   svg: SVG,
   altText = 'default alt text',
   title,

@@ -29,7 +29,7 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image sx={{'width': ['420px']}} src={Images.bannerThumb} alt="banner" />
+          <Image sx={{'width': ['500px']}} src={Images.bannerThumb} alt="banner" />
         </Box>
       </Container>
     </section>
