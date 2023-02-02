@@ -23,7 +23,6 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Project Footwear" />
           <Banner />
-          <KeyFeature />
         </Layout>
       </StickyProvider>
     </ThemeProvider>
