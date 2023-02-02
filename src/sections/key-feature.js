@@ -2,14 +2,14 @@
 import { jsx, Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from '../components/feature-card-column';
-import Pencil from '../assets/key-feature/pencil.svg';
-import Blueprint from '../assets/key-feature/blueprint.svg';
-import AssemblyLine from '../assets/key-feature/assembly.svg';
+// import Pencil from '../assets/key-feature/pencil.svg';
+// import Blueprint from '../assets/key-feature/blueprint.svg';
+// import AssemblyLine from '../assets/key-feature/assembly.svg';
 
 const data = [
   {
     id: 1,
-    svg: Pencil,
+    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324388/ProjectFootwear/pencils_hav63s.svg',
     altText: 'Design and Development',
     title: 'Design and Development',
     text:
@@ -17,7 +17,7 @@ const data = [
   },
   {
     id: 2,
-    svg: Blueprint,
+    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324332/ProjectFootwear/blueprint_mkkoy7.svg',
     altText: 'Pre Production',
     title: 'Pre Production',
     text:
@@ -25,7 +25,7 @@ const data = [
   },
   {
     id: 3,
-    svg: AssemblyLine,
+    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324419/ProjectFootwear/assembly_rnftpi.svg',
     altText: 'Production',
     title: 'Production',
     text:
@@ -46,7 +46,7 @@ export default function KeyFeature() {
           {data.map((item) => (
             <FeatureCardColumn
               key={item.id}
-              svg={item.svg}
+              imgSrc={item.imgSrc}
               alt={item.title}
               title={item.title}
               text={item.text}
