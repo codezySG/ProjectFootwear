@@ -41,7 +41,7 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader
-          slogan="Breakdown of our process from concept to reality"
+          slogan="Breakdown of our process"
           title="Steps"
           isWhite={true}
         />

@@ -23,11 +23,13 @@ export default function Footer() {
             </Box>
           ))}
         </Box>
+        <Text sx={styles.footer.copyright}>
+            © 2023-Project: Footwear. All Rights Reserved.
+        </Text>
       </Container>
-      <Text sx={styles.footer.copyright}>
-        All right reserved - Design & Developed by
-        <Link path="https://redq.io/" target="_blank">
-          RedQ, Inc
+      <Text sx={styles.footer.design}>
+        <Link path="https://www.linkedin.com/in/stefana-gloginic-28bbab118" target="_blank">
+          Designed & Developed by @Codezy
         </Link>
       </Text>
     </footer>
@@ -39,19 +41,22 @@ const styles = {
     container: {
       width: '100%',
       alignItems: 'stretch',
+      mb: '20px',
     },
     footerTopArea: {
       borderTop: '1px solid',
       borderTopColor: 'border_color',
       display: 'flex',
       flexWrap: 'wrap',
-      pt: [7, null, 8],
+      pt: [3, null, 4],
       pb: ['10px', null, null, '20px'],
       px: [0, null, null, null, 4],
     },
     menus: {
       width: ['50%', null, null, '25%'],
       display: 'flex',
+      flex: 1,
+      alignItems: 'center',
       flexDirection: 'column',
       mb: ['40px', null, null, '60px'],
     },
@@ -82,6 +87,23 @@ const styles = {
       },
     },
     copyright: {
+      fontSize: ['14px', null, 1],
+      width: '100%',
+      textAlign: 'center',
+      p: ['20px 20px'],
+      color: 'text',
+      display: 'block',
+      a: {
+        textDecoration: 'none',
+        color: 'inherit',
+        pl: 1,
+        transition: 'all 0.25s',
+        '&:hover': {
+          color: 'primary',
+        },
+      },
+    },
+    design: {
       fontSize: ['14px', null, 1],
       width: '100%',
       textAlign: 'center',
