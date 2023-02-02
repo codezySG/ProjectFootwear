@@ -23,26 +23,7 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Project Footwear" />
           <Banner />
-          <CoreFeature />
-          {
-            false ? (
-              <>
-                <Feature />
-                <PartnerSection />
-              </>
-            ) : null
-          }
-          <WorkFlow />
-          {
-            false ? (
-              <>
-                <TestimonialCard />
-                <SecurePayment />
-              </>
-            ) : null
-          }
-          <Package />
-          { false ? <Faq /> : null }
+          <KeyFeature />
         </Layout>
       </StickyProvider>
     </ThemeProvider>
