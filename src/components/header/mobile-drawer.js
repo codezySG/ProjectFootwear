@@ -66,6 +66,7 @@ const MobileDrawer = () => {
               offset={-70}
               duration={500}
               key={i}
+              onClick={toggleHandler}
             >
               {label}
             </Link>
