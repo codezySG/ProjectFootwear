@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { DrawerContext } from './drawer.context';
+import { DrawerContext } from './drawer.context.js';
 const initialState = {
   isOpen: false,
 };

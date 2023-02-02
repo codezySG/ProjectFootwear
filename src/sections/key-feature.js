@@ -1,6 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
+import { jsx, Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
 import Pencil from 'assets/key-feature/pencil.svg';

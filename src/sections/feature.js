@@ -1,6 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
+import { jsx, Container, Grid  } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
 import Smart from 'assets/feature/smart.svg';
