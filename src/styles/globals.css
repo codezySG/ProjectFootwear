@@ -10,7 +10,7 @@ body,
 
 @font-face {
 	font-family: 'PWScratchedfont';
-	src: url('../assets/PWScratched/PWScratchedfont.ttf');
+	src: url('../../public/assets/PWScratched/PWScratchedfont.ttf');
 }
 
 #mainHeading, #logo {
