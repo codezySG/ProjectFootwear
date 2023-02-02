@@ -1,10 +1,9 @@
 /** @jsxImportSource theme-ui */
-import { jsx } from 'theme-ui';
-import { Container, Grid, Box, Heading, Text } from 'theme-ui';
-import SectionHeader from 'components/section-header';
+import { jsx, Container, Grid, Box, Heading, Text } from 'theme-ui';
+import SectionHeader from '../components/section-header';
 
-import ArrowOdd from 'assets/arrowOdd.png';
-import ArrowEven from 'assets/arrowEven.png';
+import ArrowOdd from '../assets/arrowOdd.png';
+import ArrowEven from '../assets/arrowEven.png';
 
 // Configs
 import Images from '../configs/images';

@@ -1,12 +1,11 @@
 /** @jsxImportSource theme-ui */
 import { jsx, Container, Box, Grid, Text, Heading } from 'theme-ui';
-import TextFeature from 'components/text-feature';
-import Image from 'components/image';
+import TextFeature from '../components/text-feature';
+import Image from '../components/image';
 
-// import CoreFeatureThumb from 'assets/coreFeature.png';
-import RawMaterials from 'assets/core-feature/rawmaterials.svg';
-import Degrees from 'assets/core-feature/360.svg';
-import World from 'assets/core-feature/world.svg';
+import RawMaterials from '../assets/core-feature/rawmaterials.svg';
+import Degrees from '../assets/core-feature/360.svg';
+import World from '../assets/core-feature/world.svg';
 
 // COnfigs
 import Images from '../configs/images';
