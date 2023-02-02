@@ -24,7 +24,6 @@ export default function IndexPage() {
           <SEO title="Project Footwear" />
           <Banner />
           <KeyFeature />
-          <CoreFeature />
         </Layout>
       </StickyProvider>
     </ThemeProvider>
