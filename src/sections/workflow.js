@@ -11,27 +11,27 @@ import Images from '../configs/images';
 const data = [
   {
     id: 1,
-    title: 'Collaborative Design',
+    title: 'Product Need/Direction',
     text:
-      'Using cutting edge technology, we work to refine the design of your shoe.',
+      'Determine the current needs of your brand concept and direction for the final manufacturing step.',
   },
   {
     id: 2,
-    title: 'Raw Materials Selection',
+    title: 'Factory Profiles',
     text:
-      'We determine sourcing for the raw materials to construct your perfect shoe.',
+      'Go over our partnerships with manufacturers that meet your concept needs and direction.',
   },
   {
     id: 3,
     title: 'Partner Development',
     text:
-      'We seek out the right partner for you, selecting from our extensive manufacturing connections.',
+      'Establish the connection with the right partner for you and finalize agreements.',
   },
   {
     id: 4,
     title: 'Manufacturing',
     text:
-      'With your selected manufacturing partner, we build out your shoe.',
+      'With your selected manufacturing partner, complete the final and most challenging step, while building lasting relationships.',
   },
 ];
 
