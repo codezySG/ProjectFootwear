@@ -14,10 +14,10 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <h1 id="mainHeading" sx={{'variant': 'text.heroPrimary'}}>
-            Got an idea for a shoe? <span sx={{'color': '#ff8400'}}>We've got a factory for you.</span>
+            Have a unique brand concept, <span sx={{'color': '#ff8400'}}>but missing the factory?</span>
           </h1>
           <Text as="p" variant="heroSecondary">
-            Get connected to best in class manufacturing agents for your ultimate shoe design. You have the plans, we have the execution.
+            We have the connections to the right manufacturer and help facilitate strong lasting relationships.
           </Text>
           <Button
             variant="orangeButton"
