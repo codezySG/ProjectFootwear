@@ -8,7 +8,7 @@ import Layout from '../components/layout';
 import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
 import CoreFeature from '../sections/core-feature';
-import Feature from '../sections/feature';
+import FactoryProfiles from '../sections/profiles';
 import PartnerSection from '../sections/partner';
 import WorkFlow from '../sections/workflow';
 import TestimonialCard from '../sections/testimonial';
@@ -25,14 +25,8 @@ export default function IndexPage() {
           <Banner />
           <KeyFeature />
           <CoreFeature />
-          {
-            false ? (
-              <>
-                <Feature />
-                <PartnerSection />
-              </>
-            ) : null
-          }
+          <FactoryProfiles />
+          { false ? <PartnerSection /> : null }
           <WorkFlow />
           {
             false ? (

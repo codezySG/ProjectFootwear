@@ -13,7 +13,7 @@ const data = [
     altText: 'Product Direction',
     title: 'Product Direction',
     text:
-      'We work to understand the current state of your product and determine the direction for success',
+      'We learn the current state of your product to determine the direction for success',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const data = [
     altText: 'Product Need',
     title: 'Product Need',
     text:
-      'We piece together the needs of your product to determine manufactoring direction',
+      'We piece together the needs of your product to determine manufacturing direction',
   },
   {
     id: 3,

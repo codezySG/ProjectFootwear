@@ -8,32 +8,32 @@ import Images from '../configs/images';
 
 const data = {
   subTitle: 'Core services',
-  title: 'Raw Materials, manufacturing sourcing and cutting-edge technology. We have it all.',
+  title: 'Worldwide manufacturing connections for lasting relationships.',
   features: [
     {
       id: 1,
-      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324123/ProjectFootwear/rawMaterials_eq7yq7.svg',
-      altText: 'Raw Materials',
-      title: 'Raw Material Sourcing',
-      text:
-        'Access to a flow of existing and updated materials, including newly emerging sustainable materials and components.',
-    },
-    {
-      id: 2,
-      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324082/ProjectFootwear/360_d3upzl.svg',
-      altText: 'Physical and virtual prototype samples',
-      title: 'Physical and virtual prototype samples',
-      text:
-        'Using your newly developed tech-pack, create a virtual 3D 360º sample rendering or an actual physical prototype at one of our manufacturing sample shops.',
-    },
-    {
-      id: 3,
       imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675323993/ProjectFootwear/world_mkelq0.svg',
       altText: 'Worldwide Manufacturing Sourcing',
       title: 'Worldwide Manufacturing Sourcing',
       text:
         'Manufacturing in Brazil, India, and China. We also maintain extended capacities in Italy, Mexico and Portugal.',
     },
+    {
+      id: 2,
+      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675710783/ProjectFootwear/handshake_gln02r.svg',
+      altText: 'Guidance to ensure lasting relationships with your factory',
+      title: 'Guidance to ensure lasting relationships with your factory',
+      text:
+        'Tried and tested process for maintaining a healthy relationship with your factory, ensure longeivity with your partnership!',
+    },
+    {
+      id: 3,
+      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675710541/ProjectFootwear/cycle_bo9an8.svg',
+      altText: 'Feedback loop',
+      title: 'Feedback loop',
+      text:
+        'We cycle back to ensure quality of your relationship with your manufacturer.',
+    }
   ],
 };
 

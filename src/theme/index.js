@@ -298,7 +298,7 @@ export default {
         fontSize: [4, 6],
         mr: 2,
       },
-    },
+    }
   },
   cards: {
     primary: {

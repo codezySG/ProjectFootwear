@@ -11,7 +11,7 @@ import Images from '../configs/images';
 const data = [
   {
     id: 1,
-    title: 'Product Need/Direction',
+    title: 'Product Assessment',
     text:
       'Determine the current needs of your brand concept and direction for the final manufacturing step.',
   },
@@ -42,7 +42,7 @@ export default function WorkFlow() {
         <SectionHeader
           slogan="Breakdown of our process"
           title="Steps"
-          isWhite={true}
+          isWhite
         />
 
         <Grid sx={styles.grid}>
