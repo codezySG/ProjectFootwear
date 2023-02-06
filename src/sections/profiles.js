@@ -125,7 +125,7 @@ export default class Feature extends React.PureComponent {
 
   render() {
     return (
-      <section sx={{ variant: 'section.feature' }}>
+      <section sx={{ variant: 'section.feature' }} id="profiles">
         <Container sx={{display: 'flex', 'flexDirection': 'column'}}>
           <SectionHeader
             slogan="Factory Profiles"
