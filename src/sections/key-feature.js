@@ -13,7 +13,7 @@ const data = [
     altText: 'Product Direction',
     title: 'Product Direction',
     text:
-      'We learn the current state of your product to determine the direction for success',
+      'We learn the history and current state of your product to determine the direction for success',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const data = [
     altText: 'Product Need',
     title: 'Product Need',
     text:
-      'We piece together the needs of your product to determine manufacturing direction',
+      'Determine product needs, by considering gender, type of shoe, necessary materials, quality and price levels to decide manufacturing direction',
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const data = [
     altText: 'Factory Profiles',
     title: 'Factory Profiles',
     text:
-      'Given the brand concept, we match your product to the right factory',
+      'Given the brand concept and your needs, we match your product to the right factory and help you grow a lasting relationship with them',
   },
 ];
 

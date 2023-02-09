@@ -21,10 +21,10 @@ const data = {
     {
       id: 2,
       imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675710783/ProjectFootwear/handshake_gln02r.svg',
-      altText: 'Guidance to ensure lasting relationships with your factory',
-      title: 'Guidance to ensure lasting relationships with your factory',
+      altText: 'Reliable, transparent and lasting relationship with your factories',
+      title: 'Reliable, transparent and lasting relationship with factories',
       text:
-        'Tried and tested process for maintaining a healthy relationship with your factory, ensure longeivity with your partnership!',
+        'We ensure the longeivity of your partnership. Our factories have a proven track record of reliability and understanding of the necessity of transparency when inevitable issues arise.',
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const data = {
       altText: 'Feedback loop',
       title: 'Feedback loop',
       text:
-        'We cycle back to ensure quality of your relationship with your manufacturer.',
+        'We stay on board as liason to ensure quality of your ongoing relationship with your manufacturer.',
     }
   ],
 };
