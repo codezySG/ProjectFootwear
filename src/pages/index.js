@@ -43,3 +43,11 @@ export default function IndexPage() {
     </ThemeProvider>
   );
 }
+
+export const getServerSideProps = (context) => {
+    return {
+        props: {
+          message: "Welcome to the About Page"
+        },
+    }
+}
