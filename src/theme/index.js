@@ -171,10 +171,12 @@ export default {
     },
     heroSecondary: {
       color: 'white',
+      pl: ['15px', '15px', '0px'],
+      boxSizing: 'border-box',
       fontSize: [2, 3, 4, '20px', null, 3, '19px', 4],
       lineHeight: [2, null, null, null, 2.2],
       fontWeight: 'body',
-      pr: [0, null, null, null, null, '100px', null, '125px'],
+      pr: ['15px', '15px', null, null, null, '100px', null, '125px'],
       mb: ['35px', null, null, null, '40px', null, null, 7],
       textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
     },

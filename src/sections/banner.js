@@ -23,13 +23,13 @@ export default function Banner() {
           <Button
             variant="orangeButton"
             aria-label="Contact Us"
-            sx={{'display': ['none', 'none', 'none', 'none', 'block'], 'mb': '80px'}}
+            sx={{'display': ['none', 'none', 'none', 'block', 'block'], 'mb': '80px'}}
           >
             <ThemeLink sx={{ 'variant': 'links.default', 'color': 'white' }} href={FormConfig.contactUsGoogleSheet}>Contact Us</ThemeLink>
           </Button>
         </Box>
 
-        <Box sx={{'marginTop': '60px'}}>
+        <Box sx={{'marginTop': '60px', 'display': ['none', 'none', 'none', 'none', 'block']}}>
           <Image sx={{'width': ['800px']}} src={Images.bannerThumb} alt="banner" />
         </Box>
       </Container>
@@ -53,7 +53,7 @@ const styles = {
       padding: '0px !important'
     },
     contentBox: {
-      width: ['100%', null, '85%', '60%', '50%', '60%'],
+      width: ['100%', null, '85%', '100%', '50%', '60%'],
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
