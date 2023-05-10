@@ -16,7 +16,7 @@ import SecurePayment from '../sections/secure-payment';
 import Package from '../sections/package';
 import Faq from '../sections/faq';
 
-export default function IndexPage() {
+export default function IndexPage(props) {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>

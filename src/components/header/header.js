@@ -1,11 +1,12 @@
 /** @jsxImportSource theme-ui */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Button, Link as ThemeLink } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import { LogoText } from 'components/logo';
 import LogoDark from 'assets/logo-dark.svg';
 import LogoWhite from 'assets/logo.svg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
+import FormConfig from '../../configs/forms';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
@@ -31,12 +32,19 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          <Button
+          {/*<Button
             className="donate__btn"
             variant="secondary"
             aria-label="For Factories"
           >
             For Factories
+          </Button>*/}
+          <Button
+            className="donate__btn"
+            variant="secondary"
+            aria-label="Contact Us"
+          >
+            <ThemeLink sx={{ 'variant': 'links.default' }} href={FormConfig.contactUsGoogleSheet}>Contact Us</ThemeLink>
           </Button>
 
           <MobileDrawer />

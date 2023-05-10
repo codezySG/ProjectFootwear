@@ -11,7 +11,6 @@ export default function FeatureCard({
   return (
     <Box sx={styles.card}>
       <Image src={src} alt={altText} sx={styles.img} />
-
       <Box sx={styles.wrapper}>
         { title ? <Heading sx={styles.wrapper.title}>{title}</Heading> : null }
         { children ? children : <Text sx={styles.wrapper.subTitle}>{text}</Text> }
@@ -27,10 +26,9 @@ const styles = {
   },
 
   img: {
-    width: ['60px', null, null, null, '55px', '70px', null, '80px'],
+    width: ['60px', null, null, null, '55px', '50px', null, '60px'],
     height: 'auto',
-    flexShrink: 0,
-    mr: [3, 4, null, null, 3, 4, null, 5],
+    flexShrink: 0
   },
   wrapper: {
     width: '100%',

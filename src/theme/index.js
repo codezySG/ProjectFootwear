@@ -155,7 +155,7 @@ export default {
         '52px',
         '60px',
         '66px',
-        '78px',
+        '70px',
       ],
       lineHeight: 1.2,
       fontWeight: 700,
@@ -207,6 +207,8 @@ export default {
   links: {
     default: {
       cursor: 'pointer',
+      color: 'inherit !important',
+      textDecoration: 'none'
     },
     bold: {
       fontWeight: 'bold',

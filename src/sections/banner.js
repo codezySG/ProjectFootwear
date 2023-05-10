@@ -1,9 +1,10 @@
 /** @jsxImportSource theme-ui */
-import { jsx } from 'theme-ui';
+import { jsx, Link as ThemeLink } from 'theme-ui';
 import { Container, Flex, Box, Heading, Text, Image, Button } from 'theme-ui';
 import React, { useState } from 'react';
 import { Link } from 'components/link';
 import { FaPlayCircle } from 'react-icons/fa';
+import FormConfig from '../configs/forms';
 
 // Configs
 import Images from '../configs/images';
@@ -14,7 +15,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <h1 id="mainHeading" sx={{'variant': 'text.heroPrimary'}}>
-            Have a unique brand concept, <span sx={{'color': '#ff8400'}}>but missing the factory?</span>
+            Have a unique brand concept, <span sx={{'color': '#ff8400'}}>but missing the factory partner?</span>
           </h1>
           <Text as="p" variant="heroSecondary">
             We have the connections to the right manufacturer and help facilitate strong lasting relationships.
@@ -24,12 +25,12 @@ export default function Banner() {
             aria-label="Contact Us"
             sx={{'display': ['none', 'none', 'none', 'none', 'block'], 'mb': '80px'}}
           >
-            Contact Us
+            <ThemeLink sx={{ 'variant': 'links.default', 'color': 'white' }} href={FormConfig.contactUsGoogleSheet}>Contact Us</ThemeLink>
           </Button>
         </Box>
 
-        <Box sx={styles.banner.imageBox}>
-          <Image sx={{'width': ['500px']}} src={Images.bannerThumb} alt="banner" />
+        <Box sx={{'marginTop': '60px'}}>
+          <Image sx={{'width': ['800px']}} src={Images.bannerThumb} alt="banner" />
         </Box>
       </Container>
     </section>
@@ -49,6 +50,7 @@ const styles = {
     backgroundColor: 'primary',
     container: {
       display: 'flex',
+      padding: '0px !important'
     },
     contentBox: {
       width: ['100%', null, '85%', '60%', '50%', '60%'],
@@ -57,16 +59,7 @@ const styles = {
       alignItems: 'flex-start',
       flexShrink: 0,
       pt: [0, null, null, null, null, null, 5, 7],
-    },
-    imageBox: {
-      display: ['none', null, null, null, 'block'],
-      ml: [0, null, null, '-110px', '-115px', '-150px', '-210px', '-270px'],
-      mb: [0, null, null, null, '-45px', '-70px', null, '-115px'],
-      justifyContent: 'center',
-      overflow: 'hidden',
-      textAlign: 'right',
-      width: '100%',
-    },
+    }
   },
   sponsorTitle: {
     color: 'white',

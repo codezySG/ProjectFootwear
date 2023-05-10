@@ -16,15 +16,15 @@ const data = {
       altText: 'Worldwide Manufacturing Sourcing',
       title: 'Worldwide Manufacturing Sourcing',
       text:
-        'Manufacturing in Brazil, India, and China. We also maintain extended capacities in Italy, Mexico and Portugal.',
+        'Direct manufacturer connections in Brazil, China, Italy, India, Portugal and Mexico.',
     },
     {
       id: 2,
       imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675710783/ProjectFootwear/handshake_gln02r.svg',
-      altText: 'Reliable, transparent and lasting relationship with your factories',
-      title: 'Reliable, transparent and lasting relationship with factories',
+      altText: 'Reliable',
+      title: 'Reliable',
       text:
-        'We ensure the longeivity of your partnership. Our factories have a proven track record of reliability and understanding of the necessity of transparency when inevitable issues arise.',
+        'We ensure the effectiveness and longeivity of your partnership. Our factories have a proven track record of reliability and understanding of the necessity of transparency when inevitable issues arise.',
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export default function CoreFeature() {
     <section sx={styles.coreFeature} id="services">
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={Images.coreFeatureThumb} alt="Thumbnail" />
+          <Image sx={{'width': '700px'}} src={Images.coreFeatureThumb} alt="Thumbnail" />
         </Box>
         <Box sx={styles.contentBox}>
           <Box sx={styles.headingTop}>

@@ -8,245 +8,77 @@ import FeatureCard from '../components/feature-card';
 const data = [
   {
     id: 1,
+    src: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1683174693/ProjectFootwear/leather_footbed_ale6wx.jpg',
     imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
     altText: 'Italy Flag',
     title: 'Italy Flag',
     profileDetails: {
       country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
+      specialty: 'Leather Footbed Sandals',
+      moq: '360/style, 120/color',
+      price: '$20 - $30',
+      capacity: '10,000'
     }
   },
   {
     id: 2,
+    src: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1683174641/ProjectFootwear/synthetic_boots_v2al03.jpg',
     imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704588/ProjectFootwear/china_kcwjwu.svg',
     altText: 'China Flag',
     title: 'China Flag',
     profileDetails: {
       country: 'China',
-      specialty: 'Sustainable PU Boots',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
+      specialty: 'Synthetic Boots and Casuals',
+      moq: 'Style/600, Color/300',
+      price: '$15 - $45',
+      capacity: '10,000'
     }
   },
   {
     id: 3,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704678/ProjectFootwear/india_hfvuwn.svg',
-    altText: 'India Flag',
-    title: 'India Flag',
+    src: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1683174859/ProjectFootwear/all_shoes_spvfrb.jpg',
+    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1683171042/ProjectFootwear/brazil_seynvo.svg',
+    altText: 'Brazil',
+    title: 'Brazil',
     profileDetails: {
-      country: 'India',
-      specialty: 'Leather Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
+      country: 'Brazil',
+      specialty: 'Womens Leather Casuals',
+      moq: 'Style/600, Color/300',
+      price: '$18 - $40',
+      capacity: '10,000'
     }
   },
   {
     id: 4,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Customization',
-    title: 'Customization',
+    src: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1683174523/ProjectFootwear/better_class_dress_qjkfxw.jpg',
+    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704588/ProjectFootwear/china_kcwjwu.svg',
+    altText: 'Brazil',
+    title: 'Brazil',
     profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
+      country: 'China',
+      specialty: 'Various (Cement Construction) - Special Materials',
+      moq: 'Style/600, Color/300',
+      price: '$15 - $45',
+      capacity: '10,000'
     }
   },
   {
     id: 5,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Productivity',
-    title: 'Productivity',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 6,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Support',
-    title: 'Support',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-
-
-  {
-    id: 7,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Customization',
-    title: 'Customization',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 8,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Productivity',
-    title: 'Productivity',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 9,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Support',
-    title: 'Support',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-    {
-    id: 10,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Italy Flag',
-    title: 'Italy Flag',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 11,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704588/ProjectFootwear/china_kcwjwu.svg',
-    altText: 'China Flag',
-    title: 'China Flag',
-    profileDetails: {
-      country: 'China',
-      specialty: 'Sustainable PU Boots',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 12,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704678/ProjectFootwear/india_hfvuwn.svg',
-    title: 'India Flag',
-    altText: 'India Flag',
+    src: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1683174593/ProjectFootwear/leather_sandals_opy9ff.jpg',
+    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1683171107/ProjectFootwear/india_flag_swyx9q.svg',
+    altText: 'India',
+    title: 'India',
     profileDetails: {
       country: 'India',
-      specialty: 'Leather Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
+      specialty: 'Womens Leather Sandals',
+      moq: 'Style/360, Color/180',
+      price: '$8 - $18',
+      capacity: '10,000'
     }
-  },
-  {
-    id: 13,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    title: 'Customization',
-    altText: 'Customization',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 14,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Productivity',
-    title: 'Productivity',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 15,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Support',
-    title: 'Support',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-
-
-  {
-    id: 16,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Customization',
-    title: 'Customization',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 17,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Productivity',
-    title: 'Productivity',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
-  {
-    id: 18,
-    imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675704136/ProjectFootwear/italy_taicqm.svg',
-    altText: 'Support',
-    title: 'Support',
-    profileDetails: {
-      country: 'Italy',
-      specialty: 'Unit Bottom Sandals',
-      capacity: '10,000',
-      moq: '1200 pps',
-      price: '$1,200'
-    }
-  },
+  }
 ];
 
-const LIMIT = 9;
+const LIMIT = 6;
 const EXPAND_ICON = "https://res.cloudinary.com/bytesizedpieces/image/upload/v1675708349/ProjectFootwear/downArrows_fabyvk.svg";
 const COLLAPSE_ICON = "https://res.cloudinary.com/bytesizedpieces/image/upload/v1675930087/ProjectFootwear/collapse_m2ub1z.svg";
 export default class Feature extends React.Component {
@@ -256,8 +88,13 @@ export default class Feature extends React.Component {
       isExpanded: false
     };
 
-    this.initialData = data.slice(0, LIMIT);
-    this.remainder = data.slice(-1 * LIMIT);
+    if (data.length <= LIMIT) {
+      this.initialData = data;
+      this.remainder = [];
+    } else {
+      this.initialData = data.slice(0, LIMIT);
+      this.remainder = data.slice(-1 * LIMIT);
+    }
   }
 
   toggleAllProfiles = () => {
@@ -285,9 +122,10 @@ export default class Feature extends React.Component {
 
           <Grid sx={styles.grid}>
             {
-              this.initialData.map(({id, imgSrc, title, profileDetails = {}}) => (
+              this.initialData.map(({id, src, imgSrc, title, profileDetails = {}}) => (
                 <ProfileCard
                   key={id}
+                  src={src}
                   id={id}
                   imgSrc={imgSrc}
                   title={title}
@@ -296,7 +134,7 @@ export default class Feature extends React.Component {
               ))
             }
             {
-                isExpanded ? (
+                isExpanded && this.remainder.length > 0 ? (
                   <>
                     {
                       this.remainder.map(({id, imgSrc, title, profileDetails = {}}) => (
@@ -318,7 +156,7 @@ export default class Feature extends React.Component {
                       { button }
                     </div>
                   </>
-                ) : (
+                ) : this.remainder.length > 0 ? (
                   <div sx={{
                     'width': '100%',
                     position: 'absolute',
@@ -330,7 +168,7 @@ export default class Feature extends React.Component {
                   }}>
                     { button }
                   </div>
-                )
+                ) : null
             }
           </Grid>
         </Container>
@@ -341,14 +179,15 @@ export default class Feature extends React.Component {
 
 class ProfileCard extends React.PureComponent {
   render() {
-    const { id, imgSrc, title, profileDetails = {} } = this.props;
-console.log(id, title);
+    const { id, src, imgSrc, title, profileDetails = {} } = this.props;
+
     return (
       <FeatureCard
         key={id}
         src={imgSrc}
         alt={title}
       >
+        <Image src={src} sx={{'width': '300px'}} />
         <span>
           <span sx={styles.wrapper.title}>Country: </span>
           <span>{profileDetails.country}</span>
@@ -357,10 +196,10 @@ console.log(id, title);
           <span sx={styles.wrapper.title}>Specialty: </span>
           <span>{profileDetails.specialty}</span>
         </span>
-        <span>
+        {/*<span>
           <span sx={styles.wrapper.title}>Capacity: </span>
           <span>{profileDetails.capacity}</span>
-        </span>
+        </span>*/}
         <span>
           <span sx={styles.wrapper.title}>Moq: </span>
           <span>{profileDetails.moq}</span>
@@ -405,7 +244,7 @@ const styles = {
       '50px 30px',
       null,
       null,
-      '90px 70px',
+      '90px 50px',
     ],
     width: ['100%', '80%', '100%'],
     mx: 'auto',
