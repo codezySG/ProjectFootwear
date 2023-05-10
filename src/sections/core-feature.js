@@ -42,7 +42,7 @@ export default function CoreFeature() {
     <section sx={styles.coreFeature} id="services">
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image sx={{'width': '700px'}} src={Images.coreFeatureThumb} alt="Thumbnail" />
+          <Image sx={{'width': '700px', 'display': ['none', 'none', 'none', 'block', 'block']}} src={Images.coreFeatureThumb} alt="Thumbnail" />
         </Box>
         <Box sx={styles.contentBox}>
           <Box sx={styles.headingTop}>

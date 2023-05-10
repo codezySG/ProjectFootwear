@@ -117,7 +117,7 @@ export default class Feature extends React.Component {
         <Container sx={{display: 'flex', 'flexDirection': 'column'}}>
           <SectionHeader
             slogan="Factory Profiles"
-            title="Meet our partners"
+            title="Some of our partners"
           />
 
           <Grid sx={styles.grid}>
