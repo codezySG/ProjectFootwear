@@ -18,6 +18,7 @@ export default function Banner() {
             Have a unique brand concept, <span sx={{'color': '#ff8400'}}>but missing the factory partner?</span>
           </h1>
           <Text as="p" variant="heroSecondary">
+            <p sx={{'fontSize': ['18px', '24px'], 'fontWeight': '600', 'marginBottom': '18px'}}>We have a plan for your footwear project!<br /></p>
             We have the connections to the right manufacturers and help facilitate strong lasting relationships.
           </Text>
           <Button
