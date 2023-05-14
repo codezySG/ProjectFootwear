@@ -158,7 +158,7 @@ export default {
         '70px',
       ],
       lineHeight: 1.2,
-      fontWeight: '300',
+      fontWeight: ['700', '700', '300', '300'],
       mb: [5, null, null, null, '26px'],
       mt: '0px',
       textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
