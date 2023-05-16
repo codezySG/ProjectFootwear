@@ -1,9 +1,10 @@
 /** @jsxImportSource theme-ui */
-import { jsx } from 'theme-ui';
+import { jsx, Link as ThemeLink } from 'theme-ui';
 import { Container, Flex, Box, Heading, Text, Image, Button } from 'theme-ui';
 import React, { useState } from 'react';
 import { Link } from 'components/link';
 import { FaPlayCircle } from 'react-icons/fa';
+import FormConfig from '../configs/forms';
 
 // Configs
 import Images from '../configs/images';
@@ -14,22 +15,23 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <h1 id="mainHeading" sx={{'variant': 'text.heroPrimary'}}>
-            Got an idea for a shoe? <span sx={{'color': '#ff8400'}}>We've got a factory for you.</span>
+            Have a unique brand concept, <span sx={{'color': '#ff8400'}}>but missing the factory partner?</span>
           </h1>
           <Text as="p" variant="heroSecondary">
-            Get connected to best in class manufacturing agents for your ultimate shoe design. You have the plans, we have the execution.
+            <p sx={{'fontSize': ['18px', '24px'], 'fontWeight': '600', 'marginBottom': '18px'}}>We have a plan for your footwear project!<br /></p>
+            We have the connections to the right manufacturers and help facilitate strong lasting relationships.
           </Text>
           <Button
             variant="orangeButton"
             aria-label="Contact Us"
-            sx={{'display': ['none', 'none', 'none', 'none', 'block'], 'mb': '80px'}}
+            sx={{'display': ['none', 'none', 'none', 'block', 'block'], 'mb': '80px'}}
           >
-            Contact Us
+            <ThemeLink sx={{ 'variant': 'links.default', 'color': 'white' }} href={FormConfig.contactUsGoogleSheet}>Contact Us</ThemeLink>
           </Button>
         </Box>
 
-        <Box sx={styles.banner.imageBox}>
-          <Image sx={{'width': ['500px']}} src={Images.bannerThumb} alt="banner" />
+        <Box sx={{'marginTop': '60px', 'display': ['none', 'none', 'none', 'none', 'block']}}>
+          <Image sx={{'width': ['800px']}} src={Images.bannerThumb} alt="banner" />
         </Box>
       </Container>
     </section>
@@ -49,24 +51,16 @@ const styles = {
     backgroundColor: 'primary',
     container: {
       display: 'flex',
+      padding: '0px !important'
     },
     contentBox: {
-      width: ['100%', null, '85%', '60%', '50%', '60%'],
+      width: ['100%', null, '85%', '100%', '50%', '60%'],
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
       flexShrink: 0,
       pt: [0, null, null, null, null, null, 5, 7],
-    },
-    imageBox: {
-      display: ['none', null, null, null, 'block'],
-      ml: [0, null, null, '-110px', '-115px', '-150px', '-210px', '-270px'],
-      mb: [0, null, null, null, '-45px', '-70px', null, '-115px'],
-      justifyContent: 'center',
-      overflow: 'hidden',
-      textAlign: 'right',
-      width: '100%',
-    },
+    }
   },
   sponsorTitle: {
     color: 'white',

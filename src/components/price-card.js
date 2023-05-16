@@ -1,6 +1,7 @@
-import { Box, Card, Text, Flex, Heading, Button } from 'theme-ui';
+import { Box, Card, Text, Flex, Heading, Button, Link as ThemeLink } from 'theme-ui';
 import React from 'react';
 import List from './list';
+import FormConfig from '../configs/forms';
 
 export default function PriceCard({
   data: {
@@ -54,7 +55,9 @@ export default function PriceCard({
             variant={header ? 'primary' : 'whiteButton'}
             aria-label={buttonText}
           >
-            {buttonText}
+            <ThemeLink sx={{ 'variant': 'links.default', 'color': 'white' }} href={FormConfig.contactUsGoogleSheet}>
+              {buttonText}
+            </ThemeLink>
           </Button>
         </Box>
       </Box>

@@ -6,70 +6,70 @@ import SectionHeader from '../components/section-header';
 import PatternBG from '../assets/patternBG.png';
 
 const packages = [
+  // {
+  //   name: 'Basic',
+  //   description: 'For Small teams or office',
+  //   buttonText: 'Contact Us',
+  //   points: [
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'TBD available',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text:
+  //         'TBD available',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'TBD available',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCloseCircle />,
+  //       text: 'TBD unavailable',
+  //       isAvailable: false,
+  //     },
+  //     {
+  //       icon: <IoIosCloseCircle />,
+  //       text: 'TBD unavailable',
+  //       isAvailable: false,
+  //     },
+  //   ],
+  // },
   {
-    name: 'Basic',
-    description: 'For Small teams or office',
+    header: 'Pricing',
+    name: 'Pricing',
+    description: 'Project Footwear is paid on a commission fee basis',
     buttonText: 'Contact Us',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'TBD available',
+        text: 'Establish and maintain brand/manufacturer relationship',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text:
-          'TBD available',
+        text: 'Product design',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'TBD available',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'TBD unavailable',
-        isAvailable: false,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'TBD unavailable',
-        isAvailable: false,
-      },
-    ],
-  },
-  {
-    header: 'Recommended',
-    name: 'Premium',
-    description: 'For startup enterprise',
-    buttonText: 'Contact Us',
-    points: [
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'TBD available',
+        text: 'Product development',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'TBD available',
+        text: 'Product logistics and operation management',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'TBD available',
+        text: 'Samples',
         isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'TBD available',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'TBD available',
-        isAvailable: true,
-      },
+      }
     ],
   },
 ];

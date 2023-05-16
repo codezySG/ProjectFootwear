@@ -8,7 +8,7 @@ import Layout from '../components/layout';
 import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
 import CoreFeature from '../sections/core-feature';
-import Feature from '../sections/feature';
+import FactoryProfiles from '../sections/profiles';
 import PartnerSection from '../sections/partner';
 import WorkFlow from '../sections/workflow';
 import TestimonialCard from '../sections/testimonial';
@@ -16,7 +16,7 @@ import SecurePayment from '../sections/secure-payment';
 import Package from '../sections/package';
 import Faq from '../sections/faq';
 
-export default function IndexPage() {
+export default function IndexPage(props) {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
@@ -25,14 +25,8 @@ export default function IndexPage() {
           <Banner />
           <KeyFeature />
           <CoreFeature />
-          {
-            false ? (
-              <>
-                <Feature />
-                <PartnerSection />
-              </>
-            ) : null
-          }
+          <FactoryProfiles />
+          { false ? <PartnerSection /> : null }
           <WorkFlow />
           {
             false ? (
@@ -48,4 +42,12 @@ export default function IndexPage() {
       </StickyProvider>
     </ThemeProvider>
   );
+}
+
+export const getServerSideProps = (context) => {
+    return {
+        props: {
+          message: "Welcome to the About Page"
+        },
+    }
 }

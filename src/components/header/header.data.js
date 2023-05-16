@@ -11,10 +11,10 @@ export default [
     path: 'services',
     label: 'Services',
   },
-  // {
-  //   path: 'testimonial',
-  //   label: 'Testimonial',
-  // },
+  {
+    path: 'profiles',
+    label: 'Factories',
+  },
   {
     path: 'pricing',
     label: 'Pricing',

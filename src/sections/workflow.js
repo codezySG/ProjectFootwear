@@ -11,38 +11,44 @@ import Images from '../configs/images';
 const data = [
   {
     id: 1,
-    title: 'Collaborative Design',
+    title: 'Product Assessment',
     text:
-      'Using cutting edge technology, we work to refine the design of your shoe.',
+      'Determine the current needs of your brand concept and direction for the final manufacturing step.',
   },
   {
     id: 2,
-    title: 'Raw Materials Selection',
+    title: 'Factory Profiles',
     text:
-      'We determine sourcing for the raw materials to construct your perfect shoe.',
+      'Go over our partnerships with manufacturers that meet your concept needs and direction.',
   },
   {
     id: 3,
     title: 'Partner Development',
     text:
-      'We seek out the right partner for you, selecting from our extensive manufacturing connections.',
+      'Establish the connection with the right partner for you and finalize agreements.',
   },
   {
     id: 4,
+    title: 'Product Development',
+    text:
+      'With your selected manufacturing partner, begin the development cycle. Merge your concept with factory expertise, or select directly from factory collection, to create a sample that represents your vision',
+  },
+  {
+    id: 5,
     title: 'Manufacturing',
     text:
-      'With your selected manufacturing partner, we build out your shoe.',
+      'This final and most critical step, made substantially easier due to the previous steps taken.  Your selected product goes through pre-production and QA protocols and onto and through the production line.',
   },
 ];
 
 export default function WorkFlow() {
   return (
     <section sx={styles.workflow}>
-      <Container>
+      <Container sx={{'maxWidth': '1500px !important'}}>
         <SectionHeader
           slogan="Breakdown of our process"
           title="Steps"
-          isWhite={true}
+          isWhite
         />
 
         <Grid sx={styles.grid}>
@@ -95,22 +101,23 @@ const styles = {
       '50px 25px',
       null,
       null,
-      '50px 65px',
+      '50px 25px',
     ],
     gridTemplateColumns: [
       'repeat(1,1fr)',
       null,
       'repeat(2,1fr)',
       null,
-      'repeat(4,1fr)',
+      'repeat(5,1fr)',
     ],
   },
   card: {
     display: 'flex',
+    alignItems: 'center',
     flexDirection: 'column',
     position: 'relative',
     textAlign: ['center', null, 'left'],
-    width: ['100%', '80%', '100%'],
+    width: ['100%', '100%', '100%'],
     mx: 'auto',
     '&::before': {
       position: 'absolute',
@@ -156,6 +163,7 @@ const styles = {
   wrapper: {
     width: '100%',
     display: 'flex',
+    alignItems: 'center',
     flexDirection: 'column',
     mt: '-5px',
     title: {
@@ -168,6 +176,7 @@ const styles = {
 
     subTitle: {
       fontSize: 1,
+      textAlign: 'center',
       fontWeight: 400,
       lineHeight: [1.85, null, null, 1.9, 2],
       color: 'white',

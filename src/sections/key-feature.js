@@ -10,26 +10,26 @@ const data = [
   {
     id: 1,
     imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324388/ProjectFootwear/pencils_hav63s.svg',
-    altText: 'Design and Development',
-    title: 'Design and Development',
+    altText: 'Product Direction',
+    title: 'Product Direction',
     text:
-      'With industry leading software, we guide you through the design and development process step-by-step to ensure your ultimate satisfication with your shoe.',
+      'We learn the history and current state of your product to determine the direction for success',
   },
   {
     id: 2,
     imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324332/ProjectFootwear/blueprint_mkkoy7.svg',
-    altText: 'Pre Production',
-    title: 'Pre Production',
+    altText: 'Product Need',
+    title: 'Product Need',
     text:
-      'We handle the technical process of pre production when it comes to your vision.',
+      'Determine product needs, by considering gender, type of shoe, necessary materials, quality and price levels to decide manufacturing direction',
   },
   {
     id: 3,
     imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324419/ProjectFootwear/assembly_rnftpi.svg',
-    altText: 'Production',
-    title: 'Production',
+    altText: 'Factory Profiles',
+    title: 'Factory Profiles',
     text:
-      'We work on the manufactoring process with production lines to make your shoe a reality.',
+      'Given the brand concept and your needs, we match your product to the right factory and help you grow a lasting relationship with them',
   },
 ];
 

@@ -8,32 +8,32 @@ import Images from '../configs/images';
 
 const data = {
   subTitle: 'Core services',
-  title: 'Raw Materials, manufacturing sourcing and cutting-edge technology. We have it all.',
+  title: 'Worldwide manufacturing connections for lasting relationships.',
   features: [
     {
       id: 1,
-      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324123/ProjectFootwear/rawMaterials_eq7yq7.svg',
-      altText: 'Raw Materials',
-      title: 'Raw Material Sourcing',
-      text:
-        'Access to a flow of existing and updated materials, including newly emerging sustainable materials and components.',
-    },
-    {
-      id: 2,
-      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675324082/ProjectFootwear/360_d3upzl.svg',
-      altText: 'Physical and virtual prototype samples',
-      title: 'Physical and virtual prototype samples',
-      text:
-        'Using your newly developed tech-pack, create a virtual 3D 360º sample rendering or an actual physical prototype at one of our manufacturing sample shops.',
-    },
-    {
-      id: 3,
       imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675323993/ProjectFootwear/world_mkelq0.svg',
       altText: 'Worldwide Manufacturing Sourcing',
       title: 'Worldwide Manufacturing Sourcing',
       text:
-        'Manufacturing in Brazil, India, and China. We also maintain extended capacities in Italy, Mexico and Portugal.',
+        'Direct manufacturer connections in Brazil, China, Italy, India, Portugal and Mexico.',
     },
+    {
+      id: 2,
+      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675710783/ProjectFootwear/handshake_gln02r.svg',
+      altText: 'Reliable',
+      title: 'Reliable',
+      text:
+        'We ensure the effectiveness and longeivity of your partnership. Our factories have a proven track record of reliability and understanding of the necessity of transparency when inevitable issues arise.',
+    },
+    {
+      id: 3,
+      imgSrc: 'https://res.cloudinary.com/bytesizedpieces/image/upload/v1675710541/ProjectFootwear/cycle_bo9an8.svg',
+      altText: 'Feedback loop',
+      title: 'Feedback loop',
+      text:
+        'We stay on board as liason to ensure quality of your ongoing relationship with your manufacturer.',
+    }
   ],
 };
 
@@ -42,7 +42,7 @@ export default function CoreFeature() {
     <section sx={styles.coreFeature} id="services">
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={Images.coreFeatureThumb} alt="Thumbnail" />
+          <Image sx={{'width': '700px', 'display': ['none', 'none', 'none', 'block', 'block']}} src={Images.coreFeatureThumb} alt="Thumbnail" />
         </Box>
         <Box sx={styles.contentBox}>
           <Box sx={styles.headingTop}>

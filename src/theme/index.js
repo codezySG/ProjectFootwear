@@ -155,11 +155,11 @@ export default {
         '52px',
         '60px',
         '66px',
-        '78px',
+        '70px',
       ],
       lineHeight: 1.2,
-      fontWeight: 700,
-      mb: [5, null, null, null, '30px'],
+      fontWeight: ['700', '700', '300', '300'],
+      mb: [5, null, null, null, '26px'],
       mt: '0px',
       textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
     },
@@ -167,14 +167,16 @@ export default {
       color: '#ff8400',
       fontSize: [2, 3, 4, '17px', null, 3, '19px', 4],
       lineHeight: [2, null, null, null, 2.2],
-      fontWeight: '700',
+      fontWeight: ['700', '700', '300', '300'],
     },
     heroSecondary: {
       color: 'white',
+      pl: ['15px', '15px', '0px'],
+      boxSizing: 'border-box',
       fontSize: [2, 3, 4, '20px', null, 3, '19px', 4],
       lineHeight: [2, null, null, null, 2.2],
       fontWeight: 'body',
-      pr: [0, null, null, null, null, '100px', null, '125px'],
+      pr: ['15px', '15px', null, null, null, '100px', null, '125px'],
       mb: ['35px', null, null, null, '40px', null, null, 7],
       textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
     },
@@ -207,6 +209,8 @@ export default {
   links: {
     default: {
       cursor: 'pointer',
+      color: 'inherit !important',
+      textDecoration: 'none'
     },
     bold: {
       fontWeight: 'bold',
@@ -298,7 +302,7 @@ export default {
         fontSize: [4, 6],
         mr: 2,
       },
-    },
+    }
   },
   cards: {
     primary: {
